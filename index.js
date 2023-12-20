@@ -10,6 +10,8 @@ let digits = []
 
 delBtn.addEventListener("click", function(){
   operation.pop()
+  digits.pop()
+  totalEl.textContent = digits.join("")
 })
 
 clearBtn.addEventListener("click", function(){
@@ -43,7 +45,7 @@ function operate() {
   }
   const result = eval(operation.join(""))
   operation = [result]
-  lastOperator.textContet = ""
+  lastOperator.textContent = ""
   totalEl.textContent = result
 }
 
