@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <main class="calculator" id="calculator">
+    <div class="screen">
+      <h1 class="result" id="result"></h1>
+      <h1 class="last-operator" id="last-operator"></h1>
+    </div>
+    <div class="remove">
+      <button class="btn remove-btn" id="del">Del</button>
+      <button class="btn remove-btn" id="clear">C</button>
+    </div>
+    <div class="proccess">
+      <section class="buttons" id="buttons">
+      </section>
+      <section class="operators" id="operators">
+        <button class="btn operator plus" data-operator="+">+</button>
+        <button class="btn operator minus" data-operator="-">-</button>
+        <button class="btn operator times" data-operator="*">×</button>
+        <button class="btn operator divided" data-operator="/">/</button>
+      </section>
+  </div>
+    <button class="btn operator equal" data-operator="=">=</button>
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
